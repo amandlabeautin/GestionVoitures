@@ -2,7 +2,7 @@ package fr.descartes.web;
 
 public class Voiture {
 	
-	String immaticulation;
+	String immatriculation;
 	String marque;
 	boolean disponible;
 	
@@ -11,19 +11,19 @@ public class Voiture {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Voiture(String immaticulation, String marque, boolean disponible) {
+	public Voiture(String immatriculation, String marque, boolean disponible) {
 		super();
-		this.immaticulation = immaticulation;
+		this.immatriculation = immatriculation;
 		this.marque = marque;
 		this.disponible = disponible;
 	}
 
-	public String getImmaticulation() {
-		return immaticulation;
+	public String getImmatriculation() {
+		return immatriculation;
 	}
 	
-	public void setImmaticulation(String immaticulation) {
-		this.immaticulation = immaticulation;
+	public void setImmatriculation(String immatriculation) {
+		this.immatriculation = immatriculation;
 	}
 	
 	public String getMarque() {
@@ -44,7 +44,7 @@ public class Voiture {
 
 	@Override
 	public String toString() {
-		return "Voiture [immaticulation=" + immaticulation + ", marque="
+		return "Voiture [immaticulation=" + immatriculation + ", marque="
 				+ marque + ", disponible=" + disponible + "]";
 	}
 	

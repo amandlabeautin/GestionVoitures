@@ -1,0 +1,11 @@
+<div>
+	Choisir voiture :
+	<select ng-options="voiture.immatriculation for voiture in listeVoitures" ng-model="selected">
+	</select><br>
+	<input type="submit" ng-click="choisirVoiture(selected)" >
+	
+	Liste voitures :<br>
+	{{listeVoitures | json}}
+	
+	<br>Voiture selectionnees : {{selected}}  
+</div>
