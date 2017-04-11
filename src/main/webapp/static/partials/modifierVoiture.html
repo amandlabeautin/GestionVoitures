@@ -1,0 +1,11 @@
+<div>
+	Voiture :<br>
+	Immatriculation : <input type="text" ng-model="voiture.immatriculation" /><br>
+	Marque : <input type="text" ng-model="voiture.marque" /><br>
+
+	<input type="submit" ng-click="modifierVoiture(voiture)" ><br>
+	
+	Voiture en json :<br>
+	{{voiture | json}}
+	  
+</div>
