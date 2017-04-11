@@ -10,7 +10,22 @@ rentControllers.controller("rentController", function($scope,$http,$routeParams)
 	  	$scope.selected = data[0];
 	  }).
 	  error(function(data, status, headers, config) {
+		  alert("Erreur http get : " + status);
 	  });
+	
+	$scope.choisirVoiture = function(selected) {
+		
+		$http({
+		    method: 'POST',
+		    url: 'http://localhost:8080/voitre',
+		    data: selected,
+		    headers: {'Content-Type': 'application/json'}
+		}).
+		error(function(data, status, headers, config) {
+			alert("Erreur http get : " + status);
+		});
+	};
+
 
         
 });
